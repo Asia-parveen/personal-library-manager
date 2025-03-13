@@ -11,6 +11,18 @@ def set_custom_theme():
     st.markdown(
         """
         <style>
+           .stApp {
+            margin: 0;
+            padding: 0;
+            background-color: #000000; /* Black background */
+            color: #ffffff; /* White text */
+        }
+        /* Input fields text color fix */
+        .stTextInput input, 
+        .stNumberInput input {
+            color: #000000 !important; /* White text */
+            background-color: #ffffff !important; /* Dark background for visibility */
+        }
         /* Remove default padding and margin at the top */
         .stApp {
             margin: 0;
